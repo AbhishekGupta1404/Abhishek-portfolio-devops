@@ -6,7 +6,7 @@ const Hero = () => {
   const socialLinks = [
     { icon: Github, href: 'https://github.com/AbhishekGupta1404', label: 'GitHub' },
     { icon: Linkedin, href: 'https://www.linkedin.com/in/abhishek-gupta-a3a4692b8', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:abhishek.gupta1404@example.com', label: 'Email' },
+    { icon: Mail, href: 'mailto:gupta.abhishek1411@gmail.com', label: 'Email' },
   ];
 
   return (
