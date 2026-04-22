@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Mail, href: '#', label: 'Email' },
+    { icon: Github, href: 'https://github.com/AbhishekGupta1404', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://linkedin.com/in/abhishek-gupta-1404', label: 'LinkedIn' },
+    { icon: Mail, href: 'mailto:abhishek.gupta1404@example.com', label: 'Email' },
   ];
 
   return (
@@ -42,7 +42,7 @@ const Hero = () => {
             transition={{ delay: 0.3, duration: 0.6 }}
             className="text-4xl md:text-6xl lg:text-7xl font-bold"
           >
-            Your Name
+            Abhishek Gupta
           </motion.h1>
 
           {/* Title */}
