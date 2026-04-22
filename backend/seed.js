@@ -122,7 +122,7 @@ const sampleAbout = {
   resume: "#",
   socialLinks: [
     { platform: "GitHub", url: "https://github.com/AbhishekGupta1404", icon: "Github" },
-    { platform: "LinkedIn", url: "https://linkedin.com/in/abhishek-gupta-1404", icon: "Linkedin" },
+    { platform: "LinkedIn", url: "https://www.linkedin.com/in/abhishek-gupta-a3a4692b8", icon: "Linkedin" },
     { platform: "Twitter", url: "https://twitter.com/abhishekdevops", icon: "Twitter" },
     { platform: "Docker Hub", url: "https://hub.docker.com/u/abhishek1404", icon: "Docker" }
   ],
