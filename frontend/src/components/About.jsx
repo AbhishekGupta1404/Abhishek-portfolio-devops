@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { aboutAPI } from '../utils/api';
-import { Calendar, MapPin, Download, ExternalLink } from 'lucide-react';
+import { Calendar, MapPin, Download, ExternalLink, Github, Linkedin, Twitter, Mail } from 'lucide-react';
 
 const About = () => {
   const [about, setAbout] = useState(null);
@@ -17,20 +17,21 @@ const About = () => {
         // Use fallback data if API fails
         setAbout({
           title: "About Me",
-          subtitle: "Full Stack Developer",
-          description: "I'm a passionate full-stack developer with expertise in modern web technologies. I love creating intuitive, performant applications that solve real-world problems.",
-          image: "/profile-image.jpg",
+          subtitle: "System Administrator & DevOps Engineer",
+          description: "I'm Abhishek Gupta, a passionate System Administrator and DevOps Engineer with 5+ years of experience building robust infrastructure, automating deployments, and optimizing system performance. I specialize in cloud architecture, containerization, and CI/CD pipelines. When I'm not managing servers, you'll find me exploring new DevOps tools, contributing to open-source infrastructure projects, or sharing my knowledge with the tech community.",
+          image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
           resume: "#",
           socialLinks: [
-            { platform: "GitHub", url: "#", icon: "Github" },
-            { platform: "LinkedIn", url: "#", icon: "Linkedin" },
-            { platform: "Twitter", url: "#", icon: "Twitter" }
+            { platform: "GitHub", url: "https://github.com/AbhishekGupta1404", icon: "Github" },
+            { platform: "LinkedIn", url: "https://www.linkedin.com/in/abhishek-gupta-a3a4692b8", icon: "Linkedin" },
+            { platform: "Twitter", url: "https://twitter.com/abhishekdevops", icon: "Twitter" },
+            { platform: "Email", url: "mailto:gupta.abhishek1411@gmail.com", icon: "Mail" }
           ],
           stats: [
             { label: "Years Experience", value: "5+" },
-            { label: "Projects Completed", value: "50+" },
-            { label: "Happy Clients", value: "30+" },
-            { label: "Technologies", value: "15+" }
+            { label: "Servers Managed", value: "100+" },
+            { label: "CI/CD Pipelines", value: "25+" },
+            { label: "Technologies", value: "20+" }
           ]
         });
       } finally {
@@ -166,17 +167,30 @@ const About = () => {
           >
             <h3 className="text-xl font-semibold text-secondary-800 mb-6">Connect With Me</h3>
             <div className="flex justify-center items-center space-x-6">
-              {about.socialLinks.map((social, index) => (
-                <a
-                  key={social.platform}
-                  href={social.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-3 bg-secondary-100 rounded-full hover:bg-primary-100 hover:text-primary-600 transition-all duration-200 transform hover:scale-110"
-                >
-                  <span className="text-xl">{social.platform[0]}</span>
-                </a>
-              ))}
+              {about.socialLinks.map((social, index) => {
+                const getIcon = (platform) => {
+                  switch (platform.toLowerCase()) {
+                    case 'github': return <Github size={20} />;
+                    case 'linkedin': return <Linkedin size={20} />;
+                    case 'twitter': return <Twitter size={20} />;
+                    case 'email': return <Mail size={20} />;
+                    default: return <ExternalLink size={20} />;
+                  }
+                };
+                
+                return (
+                  <a
+                    key={social.platform}
+                    href={social.url}
+                    target={social.platform === 'Email' ? '_self' : '_blank'}
+                    rel={social.platform === 'Email' ? '' : 'noopener noreferrer'}
+                    className="p-3 bg-secondary-100 rounded-full hover:bg-primary-100 hover:text-primary-600 transition-all duration-200 transform hover:scale-110"
+                    title={social.platform}
+                  >
+                    {getIcon(social.platform)}
+                  </a>
+                );
+              })}
             </div>
           </motion.div>
         )}
