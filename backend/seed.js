@@ -117,14 +117,14 @@ const sampleSkills = [
 const sampleAbout = {
   title: "About Me",
   subtitle: "System Administrator & DevOps Engineer",
-  description: "I'm a passionate System Administrator and DevOps Engineer with 5+ years of experience building robust infrastructure, automating deployments, and optimizing system performance. I specialize in cloud architecture, containerization, and CI/CD pipelines. When I'm not managing servers, you'll find me exploring new DevOps tools, contributing to open-source infrastructure projects, or sharing my knowledge with the tech community.",
+  description: "I'm Abhishek Gupta, a passionate System Administrator and DevOps Engineer with 5+ years of experience building robust infrastructure, automating deployments, and optimizing system performance. I specialize in cloud architecture, containerization, and CI/CD pipelines. When I'm not managing servers, you'll find me exploring new DevOps tools, contributing to open-source infrastructure projects, or sharing my knowledge with the tech community.",
   image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
   resume: "#",
   socialLinks: [
-    { platform: "GitHub", url: "https://github.com/username", icon: "Github" },
-    { platform: "LinkedIn", url: "https://linkedin.com/in/username", icon: "Linkedin" },
-    { platform: "Twitter", url: "https://twitter.com/username", icon: "Twitter" },
-    { platform: "Docker Hub", url: "https://hub.docker.com/u/username", icon: "Docker" }
+    { platform: "GitHub", url: "https://github.com/AbhishekGupta1404", icon: "Github" },
+    { platform: "LinkedIn", url: "https://linkedin.com/in/abhishek-gupta-1404", icon: "Linkedin" },
+    { platform: "Twitter", url: "https://twitter.com/abhishekdevops", icon: "Twitter" },
+    { platform: "Docker Hub", url: "https://hub.docker.com/u/abhishek1404", icon: "Docker" }
   ],
   stats: [
     { label: "Years Experience", value: "5+" },

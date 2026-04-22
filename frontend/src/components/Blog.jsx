@@ -31,7 +31,7 @@ const Blog = () => {
             content: 'Full article content here...',
             image: 'https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=800&h=400&fit=crop',
             author: {
-              name: 'Your Name',
+              name: 'Abhishek Gupta',
               avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face'
             },
             category: 'kubernetes',
@@ -48,7 +48,7 @@ const Blog = () => {
             content: 'Full article content here...',
             image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=400&fit=crop',
             author: {
-              name: 'Your Name',
+              name: 'Abhishek Gupta',
               avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face'
             },
             category: 'infrastructure',
@@ -65,7 +65,7 @@ const Blog = () => {
             content: 'Full article content here...',
             image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop',
             author: {
-              name: 'Your Name',
+              name: 'Abhishek Gupta',
               avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face'
             },
             category: 'cicd',
@@ -82,7 +82,7 @@ const Blog = () => {
             content: 'Full article content here...',
             image: 'https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800&h=400&fit=crop',
             author: {
-              name: 'Your Name',
+              name: 'Abhishek Gupta',
               avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face'
             },
             category: 'monitoring',
@@ -99,7 +99,7 @@ const Blog = () => {
             content: 'Full article content here...',
             image: 'https://images.unsplash.com/photo-1558494949-ef010cbcc31b?w=800&h=400&fit=crop',
             author: {
-              name: 'Your Name',
+              name: 'Abhishek Gupta',
               avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face'
             },
             category: 'security',
