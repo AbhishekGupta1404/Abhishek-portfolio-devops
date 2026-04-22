@@ -1,17 +1,20 @@
-# Portfolio Full-Stack Application
+# DevOps Portfolio Website
 
-A modern, responsive portfolio website built with React, Node.js, Express, and MongoDB. This application showcases projects, skills, and provides a contact form with email functionality.
+A professional portfolio website for System Administrator & DevOps Engineer, built with React, Node.js, Express, and MongoDB. This application showcases DevOps projects, infrastructure skills, and provides comprehensive contact functionality.
 
 ## Features
 
+- **DevOps-Focused Projects**: Realistic infrastructure and automation projects with metrics
+- **Cloud & Container Technologies**: Kubernetes, Docker, Terraform, AWS, Azure, GCP
+- **Monitoring & Observability**: Prometheus, Grafana, ELK Stack integration
+- **CI/CD Pipeline Showcase**: GitLab CI, Jenkins, GitHub Actions examples
+- **Security Implementation**: Zero-trust architecture, compliance, and hardening
 - **Responsive Design**: Mobile-first approach with Tailwind CSS
-- **Modern UI**: Clean, professional design with smooth animations
-- **Full-Stack**: React frontend with Node.js/Express backend
-- **Database**: MongoDB for data persistence
+- **Dark/Light Theme**: Professional theme toggle for better user experience
+- **Search & Filter**: Advanced project filtering by technology and category
+- **Blog Section**: DevOps tutorials and technical articles
 - **Contact Form**: Functional contact form with email notifications
-- **Project Showcase**: Dynamic project display with filtering
-- **Skills Display**: Categorized skills with proficiency levels
-- **Interactive Elements**: Smooth scrolling, hover effects, and micro-interactions
+- **Interactive Elements**: Smooth animations, project modals, and micro-interactions
 
 ## Tech Stack
 
