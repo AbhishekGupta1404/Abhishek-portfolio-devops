@@ -1,8 +1,7 @@
 {
   "version": 2,
-  "buildCommand": "npm run build",
+  "buildCommand": "build-vercel.bat",
   "outputDirectory": "dist",
-  "installCommand": "npm install",
   "framework": "vite",
   "builds": [
     {
