@@ -5,8 +5,7 @@
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "dist",
-        "buildCommand": "npx vite build"
+        "distDir": "dist"
       }
     }
   ],
@@ -17,6 +16,6 @@
     }
   ],
   "env": {
-    "VITE_API_URL": "https://portfolio-backend-abhishek.vercel.app/api"
+    "VITE_API_URL": "https://abhishek-portfolio-devops.railway.app/api"
   }
 }
