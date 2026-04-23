@@ -1,8 +1,5 @@
 {
   "version": 2,
-  "buildCommand": "build-vercel.bat",
-  "outputDirectory": "dist",
-  "framework": "vite",
   "builds": [
     {
       "src": "package.json",
