@@ -7,63 +7,15 @@
       "config": {
         "distDir": "dist"
       }
-    },
-    {
-      "src": "backend/api/index.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "backend/api/projects.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "backend/api/skills.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "backend/api/about.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "backend/api/contact.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "backend/api/health.js",
-      "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "src": "/api/projects",
-      "dest": "/backend/api/projects.js"
-    },
-    {
-      "src": "/api/skills",
-      "dest": "/backend/api/skills.js"
-    },
-    {
-      "src": "/api/about",
-      "dest": "/backend/api/about.js"
-    },
-    {
-      "src": "/api/contact",
-      "dest": "/backend/api/contact.js"
-    },
-    {
-      "src": "/api/health",
-      "dest": "/backend/api/health.js"
-    },
-    {
       "src": "/(.*)",
-      "dest": "/frontend/index.html"
+      "dest": "/index.html"
     }
   ],
   "env": {
-    "NODE_ENV": "production",
-    "MONGODB_URI": "@mongodb_uri",
-    "EMAIL_USER": "@email_user",
-    "EMAIL_PASS": "@email_pass",
-    "VITE_API_URL": "/api"
+    "VITE_API_URL": "https://portfolio-backend-abhishek.vercel.app/api"
   }
 }
