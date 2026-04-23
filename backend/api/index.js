@@ -2,7 +2,7 @@ import { connectDB } from '../config/database.js';
 import Project from '../models/Project.js';
 import Skill from '../models/Skill.js';
 import About from '../models/About.js';
-import Contact from '../models/Contact.js';
+import ContactMessage from '../models/ContactMessage.js';
 
 // Initialize database connection
 let dbConnected = false;
@@ -137,7 +137,7 @@ export async function contactHandler(req, res) {
     await ensureDBConnection();
     
     if (req.method === 'POST') {
-      const contact = await Contact.create(req.body);
+      const contact = await ContactMessage.create(req.body);
       return res.status(201).json({
         success: true,
         data: contact,

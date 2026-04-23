@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 const SkillSchema = new mongoose.Schema({
   name: {
@@ -8,7 +8,7 @@ const SkillSchema = new mongoose.Schema({
   },
   category: {
     type: String,
-    enum: ['frontend', 'backend', 'database', 'devops', 'tools', 'other'],
+    enum: ['infrastructure', 'cloud', 'containerization', 'cicd', 'monitoring', 'security', 'tools'],
     required: true
   },
   proficiency: {
@@ -35,4 +35,4 @@ const SkillSchema = new mongoose.Schema({
   }
 });
 
-module.exports = mongoose.model('Skill', SkillSchema);
+export default mongoose.model('Skill', SkillSchema);
