@@ -10,8 +10,8 @@
     "start": "vite preview --host 0.0.0.0 --port $PORT",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["portfolio", "react", "vite", "tailwind"],
-  "author": "",
+  "keywords": ["portfolio", "react", "vite", "tailwind", "devops"],
+  "author": "Abhishek Gupta",
   "license": "ISC",
   "dependencies": {
     "react": "^18.2.0",

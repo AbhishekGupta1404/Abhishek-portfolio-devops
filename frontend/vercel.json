@@ -16,6 +16,6 @@
     }
   ],
   "env": {
-    "VITE_API_URL": "/api"
+    "VITE_API_URL": "https://portfolio-backend-abhishek.vercel.app/api"
   }
 }
