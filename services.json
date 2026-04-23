@@ -1,13 +1,26 @@
 {
-    "experimentalServices": {
+    "services": {
         "frontend": {
-            "entrypoint": "frontend",
+            "source": "frontend",
             "routePrefix": "/",
-            "framework": "vite"
+            "build": {
+                "builder": "NIXPACKS"
+            },
+            "deploy": {
+                "startCommand": "npm run start",
+                "healthcheckPath": "/"
+            }
         },
         "backend": {
-            "entrypoint": "backend",
-            "routePrefix": "/_/backend"
+            "source": "backend",
+            "routePrefix": "/api",
+            "build": {
+                "builder": "NIXPACKS"
+            },
+            "deploy": {
+                "startCommand": "npm start",
+                "healthcheckPath": "/api/health"
+            }
         }
     }
 }
